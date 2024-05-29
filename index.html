@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Website Prototype 1</title>
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="copyright.css">
+    <link rel="stylesheet" href="top_button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital@0;1&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head> 
+
+<style>
+    
+    .orderlistcolor {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0; /* Changed to 0 to align with the border */
+        margin: 0;
+    }
+    .orderlist {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-top: 3px solid white; /* Add top border */
+        border-bottom: 3px solid white;
+        padding-top: 10px;
+        padding-left: 0; /* Ensure no extra space at the left */
+        margin: 0; /* Ensure no extra margin at the left */
+    }
+    .orderlist a {
+        color: inherit;
+        text-decoration: none; 
+    }
+    .orderlist a:hover {
+        color: rgb(252, 145, 22);
+        transition: 0.4s ease-in-out;
+    }
+    .orderlist li {
+        margin-bottom: 10px;
+        padding-left: 10px; /* Adjust left padding for the list items */
+    }
+    
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 2;
+        min-width: 400px;
+        font-family: Montserrat, sans-serif; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 70px;
+        padding-left: 0; 
+    } 
+    
+    .content-table thead tr {
+        background-color: rgb(252, 145, 22);
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .content-table th, .content-table td {
+        padding: 12px 15px;
+    }
+    
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .content-table tbody tr:nth-of-type(odd) {
+        background-color: #f3f3f3;
+    }
+    
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid rgb(252, 145, 22);
+    }
+    
+    body {
+        background-image: url('Background-image-3.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        background-attachment: fixed;
+    }
+    
+    .content-table tbody tr:hover td:hover {
+        color: rgb(252, 145, 22);
+        transition: 0.4s ease-in-out;
+    }
+    
+    .content-table th.summary {
+        width: 400px;
+    }
+    
+    img {
+        transition: transform 1s;
+    }
+    
+    img:hover {
+        transform: scale(1.02);
+    }
+    
+</style>
+
+<body style="background-image: url('Background-image-3.jpg'); background-size: 100vw 100vh; background-repeat: no-repeat; margin: 0; padding: 0;">
+
+    <header>
+        <div class="logo">Imeer Hafiz Isyraf</div>
+        <nav class="Menu">
+            <div class="Choices">
+                <a href="home page.html"><b>Home</a></b>
+                <a href="about me.html"><b>About Me</a></b>
+                <a href="educational background.html"><b>Educational Background</a></b>
+                <a href="hobbies and interest.html"><b>Interests</a></b>
+                <a href="trivias.html"><b>Trivias</a></b>
+                <div class="dropdown">
+                    <button class="dropbtn"><b>Gallery</b><span class="chevron">&#9660;</span></button>
+                    <div class="dropdown-content">
+                        <a href="gallery me.html"><b>Me & Friends</a></b>
+                        <a href="gallery family.html"><b>Family Gallery</a></b>
+                    </div>
+                </div>
+                <a href="feedback.html"><b>Feedback</a></b>
+            </div>
+        </nav>
+        <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/imeer-hafiz-isyraf-b6582b301/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/usernamewastaken0_0/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61551690045565" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/Penguin4Lifes" target="_blank"><i class="fab fa-x-twitter"></i></a>
+
+        </div>
+    </header>
+
+<div class="Container">
+    <p style="font-family: Montserrat, sans-serif; font-size: 50px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 10px; margin: 0; text-shadow: 5px 2px 4px #000000; padding-top: 10px"><u>Trivias</u></p>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px; margin: 0; padding-top: 20px; padding-bottom: 20px">Welcome to my trivia page! Here, you'll discover fun and fascinating facts about me. Dive in to learn more about my unique taste in music, movies, tv shows, and many other fun facts about me. Enjoy exploring! (REREAD AND MAKE IT BETTER)</p>
+
+    <div class="orderlistcolor">
+    <ol style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 40px; margin: 0" class="orderlist">
+        <li><a href="#TopSongs">My Top 5 Favourite Songs</li></a>
+        <li><a href="#TopMovies">My Top 5 Favourite Movies</li></a>
+        <li><a href="#TopShows">My Top 5 Favourite TV Shows</li></a>
+        <li><a href="#Places">Countries I Want To Visit</li></a>
+        <li><a href="#Hobbies">Hobbies I Want To Explore</li></a>
+        <li><a href="#WebNovels">My Top 5 Web-Novels</li></a>
+    </ol>
+    </div>
+
+    <h3 style="font-family: Montserrat, sans-serif; font-size: 30px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 20px; margin: 0; padding-top: 20px" id="TopSongs">1. My Top 5 Favourite Songs</h3>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">I'm excited to share my top five favourite songs, each one of these songs holds special a meaning for me. Music has always been a huge part of my life, and these tracks perfectly capture the emotions and memories I cherish. Here's my personal list of my top 5 favourite songs.</p>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Song Title</th>
+                <th>Artist</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>So Far Away</td>
+                <td>Red</td>
+                <td>Rock</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Empty Cup</td>
+                <td>Citizen Soldier</td>
+                <td>Rock</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Love Is Gone (Acoustic)</td>
+                <td>SLANDER, Dylan Matthew</td>
+                <td>Pop</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Never Surrender</td>
+                <td>Skillet</td>
+                <td>Rock</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Black Hole (Acoustic)</td>
+                <td>Grif</td>
+                <td>Pop</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">Here's the song audio, I’d love for you to listen and experience them too, starting with my top pick: </p>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">1. So Far Away - Red</p>
+    <audio controls style="padding-left: 30px; padding-right: 30px;">
+        <source src="So Far Away Red.mp3" type="audio/mpeg">
+    </audio>
+
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">2. Empty Cup - Citizen Soldier</p>
+    <audio controls style="padding-left: 30px; padding-right: 30px;">
+        <source src="Empty Cup Citizen.mp3" type="audio/mpeg">
+    </audio>
+
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">3. Love Is Gone (Acoustic) - SLANDER, Dylan Matthew</p>
+    <audio controls style="padding-left: 30px; padding-right: 30px;">
+        <source src="Love Is Gone Slander.mp3" type="audio/mpeg">
+    </audio>   
+
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">4. Never Surrender - Skillet</p>
+    <audio controls style="padding-left: 30px; padding-right: 30px;">
+        <source src="never surrender.mp3" type="audio/mpeg">
+    </audio>
+
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">5. Black Hole (Acoustic) - Grif</p>
+    <audio controls style="padding-left: 30px; padding-right: 30px;">
+        <source src="Black Hole Grif.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <h3 style="font-family: Montserrat, sans-serif; font-size: 30px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 20px; margin: 0; padding-top: 20px" id="TopMovies">2. My Top 5 Favourite Movies</h3>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">I'm excited to show my top five favorite movies, each of which holds a special place in my heart, and i would always rewatch any of this films whenever I have some free time to spare. Movies have always been a major influence in my life, and these films encapsulate the emotions and memories I hold dear. Here's my personal list of my top five favorite films. I also included the movies trailer, I'd love for you to watch it and decide if you'd like to see the movie too</p>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Movie Title</th>
+                <th>Year Of Released</th>
+                <th>Genre</th>
+                <th>Trailer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Oppenheimer</td>
+                <td>2023</td>
+                <td>Thriller, Historical, Drama</td>
+                <td><div class="video">
+                    <iframe width="450" height="345" src="https://www.youtube.com/embed/uYPbbksJxIg?si=7lY71NmVbRYh9pVa" autoplay="false"></iframe>
+                    </div></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>I Want to Eat Your Pancreas</td>
+                <td>2018</td>
+                <td>Comedy, Romance, Drama</td>
+                <td><div class="video">
+                    <iframe width="450" height="345" src="https://www.youtube.com/embed/OOpFcDxoU18?si=S7k3RjVNXiU1vS0c" autoplay="false"></iframe>
+                    </div></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>A Silent Voice</td>
+                <td>2016</td>
+                <td>Romance, Drama</td>
+                <td><div class="video">
+                    <iframe width="450" height="345" src="https://www.youtube.com/embed/nfK6UgLra7g?si=sbZEAMZ3TqyBZyXT"  autoplay="false"></iframe>
+                    </div></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>The Terminal</td>
+                <td>2004</td>
+                <td>Comedy, Romance</td>
+                <td><div class="video">
+                    <iframe width="450" height="345" src="https://www.youtube.com/embed/iZqQRmhRvyg?si=mgZ4fasgoV-ugCiT" autoplay="false"></iframe>
+                </div></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Annabelle: Creation</td>
+                <td>2017</td>
+                <td>Horror, Supenatural </td>
+                <td><div class="video">
+                    <iframe width="450" height="345" src="https://www.youtube.com/embed/KisPhy7T__Q?si=OkVWjRRl8tmgDaX-" autoplay="false"></iframe>
+                </div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 style="font-family: Montserrat, sans-serif; font-size: 30px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 20px; margin: 0; padding-top: 20px" id="TopShows">3. My Top 5 Favourite TV Shows</h3>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">I'm excited to share my top five TV shows, each of which has a unique place in my heart. TV shows have always had a big impact on my life, and I would always rewatch these shows or just play it as background noise whenever I do some task. Here's my personal list of my top five favorite TV shows.</p>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>TV Show Title</th>
+                <th>Seasons</th>
+                <th>Year Of Released</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Supernatural</td>
+                <td>15</td>
+                <td>2005</td>
+                <td>Action, Drama, Supernatural, Horror</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Queen Of Tears</td>
+                <td>1</td>
+                <td>2024</td>
+                <td>Drama, Romance</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Prison Break</td>
+                <td>5</td>
+                <td>2005</td>
+                <td>Action Thriller, Crime, Drama</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ghost Doctor</td>
+                <td>1</td>
+                <td>2022</td>
+                <td>Drama</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Breaking Bad</td>
+                <td>5</td>
+                <td>2008</td>
+                <td>Crime, Thriller, Drama</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">Here's the TV shows summary and its picture, I'd love for you to read the summary and decide if you'd like to see the TV show too.</p>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>TV Show Title</th>
+                <th>TV Show Poster</th>
+                <th class="summary">Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Supernatural</td>
+                <td><img src="supernatural.jpg" alt="Supernatural" width="200" height="300"></td>
+                <td>"Supernatural" follows brothers Sam and Dean Winchester as they hunt demons, ghosts, monsters, and other supernatural beings. Their mission is to save people from the forces of evil while grappling with their own personal struggles and family secrets. With a mix of horror, drama, and humor, the show explores themes of loyalty, sacrifice, and the bond between siblings as the Winchesters face increasingly dangerous threats.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Queen Of Tears</td>
+                <td><img src="queen of tears.jpg" alt="Queen Of Tears" width="200" height="300"></td>
+                <td>"Queen Of Tears" is a series depicts the crisis and rekindling of love between Hong Hae-in, a third-generation chaebol heiress of Queens Group, and Baek Hyun-woo, the son of farmers from Yongdu-ri, and their three years of marriage.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Prison Break</td>
+                <td><img src="prison break.jpg" alt="Prison Break" width="200" height="300"></td>
+                <td>"Prison Break" revolves around two brothers: Lincoln Burrows, who has been sentenced to death for a crime he did not commit and his younger brother Michael Scofield, a genius who devises an elaborate plan to help him escape prison by purposely getting himself imprisoned.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ghost Doctor</td>
+                <td><img src="ghost doctor.jpeg" alt="Ghost Doctor" width="200" height="300"></td>
+                <td>The series revolves around two doctors from extreme backgrounds, who have complete opposite personalities and medical skills: Cha Young-min (Rain) is a genius doctor and a high-skilled cardiothoracic surgeon, but is arrogant and selfish. Go Seung-tak (Kim-Bum), who although possesses excellent medical knowledge, is hindered by his lack of surgical knowledge and fear of performing surgery. One day, Young Min gets involved in an unexpected case, and due to this, his spirit possesses Seung-tak's body.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Breaking Bad</td>
+                <td><img src="breaking bad.jpg" alt="Breaking Bad" width="200" height="300"></td>
+                <td>"Breaking Bad" follows the story of Walter White, a high school chemistry teacher turned methamphetamine manufacturer. As Walter descends into the criminal underworld, he grapples with the consequences of his actions and the impact on his family. The show explores themes of morality, power, and the consequences of choices as Walter becomes increasingly entangled in the dangerous world of drug trafficking.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 style="font-family: Montserrat, sans-serif; font-size: 30px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 20px; margin: 0; padding-top: 20px" id="Places">4. Countries I Want To Visit</h3>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">I'm thrilled to share the top five countries I dream of visiting. Traveling has always been a passion of mine, and these destinations are at the top of my bucket list. Each place offers a unique experience and a chance to explore new cultures and landscapes. Here's my personal list of the top five countries I want to visit.</p>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Country</th>
+                <th>Capital</th>
+                <th>Continent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Japan</td>
+                <td>Tokyo</td>
+                <td>Asia</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>South Korea</td>
+                <td>Seoul</td>
+                <td>Asia</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Austria</td>
+                <td>Vienna</td>
+                <td>Europe</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Canada</td>
+                <td>Ottawa</td>
+                <td>North America</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Italy</td>
+                <td>Rome</td>
+                <td>Europe</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 style="font-family: Montserrat, sans-serif; font-size: 30px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 20px; margin: 0; padding-top: 20px" id="Hobbies">5. Hobbies I Want To Explore</h3>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">I'm eager to share the top five hobbies I'm looking forward to exploring. Engaging in new activities has always been a source of joy and growth for me, and these hobbies promise exciting experiences and opportunities for learning. Each hobby offers a unique way to unwind, express creativity, and connect with others. Here's my personal list of the top five hobbies I want to explore.</p>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Hobby</th>
+                <th class="summary">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Photography</td>
+                <td>Photography is a hobby that allows you to capture moments, express creativity, and explore the world through a lens. Whether you're capturing landscapes, portraits, or abstract images, photography offers a unique way to document your experiences and share your perspective with others.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Painting</td>
+                <td>Painting is a creative outlet that allows you to express emotions, ideas, and experiences through color, texture, and form. Whether you're working with acrylics, watercolors, or oils, painting offers a therapeutic and meditative process that can help you relax and unwind.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hiking</td>
+                <td>Hiking is a hobby that allows you to explore nature, challenge yourself physically, and enjoy the great outdoors. Whether you're hiking through mountains, forests, or national parks, hiking offers a chance to connect with nature, stay active, and experience breathtaking views.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Cooking</td>
+                <td>Cooking is a hobby that allows you to experiment with flavors, ingredients, and techniques to create delicious meals. Whether you're baking, grilling, or sautéing, cooking offers a creative and rewarding process that can help you unwind, de-stress, and share your culinary creations with others.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Badminton</td>
+                <td>
+                    Badminton is more than just a hobby; it's a dynamic and engaging sport that combines physical activity with fun. Playing badminton helps improve cardiovascular health, reflexes, and coordination. Whether playing casually with friends or competitively in tournaments, badminton offers a chance to stay active and enjoy the thrill of the game. The fast-paced nature of badminton makes it an exciting way to spend leisure time, while also providing numerous health benefits. </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 style="font-family: Montserrat, sans-serif; font-size: 30px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 20px; margin: 0; padding-top: 20px" id="WebNovels">6. My Top 5 Web-Novels</h3>
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">I'm excited to reveal the top five web novels that I'm eagerly looking forward to diving into. Exploring fictional worlds has always captivated me, and these stories are at the pinnacle of my reading list. Each novel promises a distinctive journey filled with rich storytelling and immersive worlds. Without further ado, here's my personal ranking of the top five web novels.</p>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Chapters</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>The Great Ruler</td>
+                <td>Tian Can Tu Dou</td>
+                <td>1560</td>
+                <td>Action, Adventure, Fantasy, Martial Arts, Xuanhuan</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dragon Prince Yuan</td>
+                <td>Tian Can Tu Dou</td>
+                <td>1503</td>
+                <td>Action, Adventure, Fantasy, Martial Arts, Xuanhuan</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Battle Through The Heavens</td>
+                <td>Tian Can Tu Dou</td>
+                <td>1648</td>
+                <td>Action, Adventure, Fantasy, Martial Arts, Xuanhuan</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Againts The Gods</td>
+                <td>Mars Gravity</td>
+                <td>2043</td>
+                <td>Action, Adventure, Fantasy, Martial Arts, Xuanhuan, Romance</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Wu Dong Qian Kun</td>
+                <td>Tian Can Tu Dou</td>
+                <td>1309</td>
+                <td>Action, Adventure, Fantasy, Martial Arts, Xuanhuan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="font-family: Montserrat, sans-serif; font-size: 20px; color: rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; padding-left: 30px; padding-right: 30px;">Here's the Web-Novel summary and its picture, I'd love for you to read the summary and decide if you'd like to read the Web-Novel too.</p>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Web-Novel Title</th>
+                <th>Web-Novel Poster</th>
+                <th class="summary">Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>The Great Ruler</td>
+                <td><img src="the great ruler.png" width="200" height="300"></td>
+                <td>"The Great Thousand World" is a vast realm where multiple planes intersect, inhabited by various clans and lords. Heavenly Sovereigns emerge from the Lower Planes, each possessing legendary abilities that others aspire to attain in their quest for rulership. Across different territories, powerful figures like the Flame Emperor, the Martial Ancestor, the Emperor of a Hundred Battles, and the Immortal Owner wield immense authority. Amidst this landscape, a boy from the Northern Spiritual Realm embarks on a journey atop a Nine Netherworld Bird, seeking to determine his destiny and become a Great Ruler. The narrative revolves around the ambition and competition of individuals striving for supremacy in this diverse and vibrant world.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dragon Prince Yuan</td>
+                <td><img src="dragon prince.jpg" width="200" height="300"></td>
+                <td>In a world where Yin and Yang fuel the battle for destiny, the conflict between the Serpent and Sacred Saint Dragon emerges, with uncertainty over which will prevail. Zhou Yuan, prince of the Great Zhou Empire, is burdened by a fatal poison since birth. Fate leads him to a mysterious domain where he encounters intriguing characters. Amidst chaos and lightning, Zhou Yuan wields his pen while the dragon dances, symbolizing his quest for supremacy. Join Zhou Yuan as he navigates the whirlpool of destiny in pursuit of ultimate cultivation.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Battle Through The Heavens</td>
+                <td><img src="heaves.jpg"  width="200" height="300"></td>
+                <td>In a land where no magic is present. A land where the strong make the rules and the weak have to obey. A land filled with alluring treasures and beauty, yet also filled with unforeseen danger. Three years ago, Xiao Yan, who had shown talents none had seen in decades, suddenly lost everything. His powers, his reputation, and his promise to his mother. What sorcery has caused him to lose all of his powers? And why has his fiancee suddenly shown up?</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Againts The Gods</td>
+                <td><img src="againts.webp"  width="200" height="300"></td>
+                <td>Mythical Abode Mountain, Cloud’s End Cliff, the most dangerous of Azure Cloud Continent’s four deadly areas. Cloud’s End Cliff’s base is known as the Grim Reaper’s Cemetery.
+
+                    Over countless years, the number of people that have fallen off this cliff is too high to count. None of them, even three stronger than god masters, whose power could pierce the heavens, have been able to return alive. However, a boy that’s being chased by various people because he alone holds a priceless treasure jumps off the cliff, but instead of dying he wakes up in the body of a boy with the same name in another world!
+                    
+                    This is the story of a boy wielding the Sky Poison Pearl, cultivating the strength to oppose heaven and earth, a lord overlooking the world!</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Wu Dong Qian Kun</td>
+                <td><img src="wu dong.jpg" width="200" height="300"></td>
+                <td>
+                    In the Great Yan Empire, strength commands respect, particularly within the influential Lin Clan. Lin Dong, from a banished branch of the Lin Clan, witnesses his father's defeat and his family's suffering at the hands of Lin Langtian, a prodigy of the main clan. Driven by revenge and armed only with determination, Lin Dong seeks to avenge his family's honor. However, his path takes an unexpected turn when he discovers a mysterious stone talisman, leading him toward a destiny beyond his wildest imagination.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<a href="#" class="back-to-top">
+    <span class="material-icons">arrow_upward</span>
+</a>
+
+<div class="copyright" id="lastModified">
+    <footer>© 2024 Imeer Hafiz Isyraf. All rights reserved.</footer>
+</div>
+
+<script>
+    window.addEventListener("load", function() {
+        var latestDate = new Date(document.lastModified);
+        var formattedDate = latestDate.toLocaleString();
+        document.getElementById("lastModified").innerHTML = "© 2024 Imeer Hafiz Isyraf. All rights reserved. Last update: " + formattedDate;
+    });
+</script>
+
+</body>
+
+</html>
